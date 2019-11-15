@@ -8,13 +8,13 @@ if len(password)<6:
     validity=False
 if not any(i.isupper() for i in password):
     validity=False
-if not any(i.islower()):
+if not any(i.islower() for i in password):
     validity=False
-if not any(i.isnumeric()):
+if not any(i.isnumeric() for i in password):
     validity=False
-if not any(i in special_characters):
+if not any(i in special_characters for i in password):
     validity=False
-if any(i in forbidden_characters):
+if any(i in forbidden_characters for i in password):
     validity=False
 if validity:
     print('Password is valid')
