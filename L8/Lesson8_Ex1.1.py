@@ -1,3 +1,4 @@
+# Calculate sum of size all .py files in your working directory. Convert in in MegaBytes.
 import os
 total_size= 0
 for filename in os.listdir('C:\\Users\\user\\Documents\\Python\\Tekwill python\\L8'):
